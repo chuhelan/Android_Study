@@ -65,6 +65,13 @@
             android:text="GridView"
             android:textAllCaps="false" />
 
+        <Button
+            android:id="@+id/btn_recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RecycleView"
+            android:textAllCaps="false" />
+
 
     </LinearLayout>
 </ScrollView>

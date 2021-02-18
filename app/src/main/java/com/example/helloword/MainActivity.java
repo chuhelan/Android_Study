@@ -1,6 +1,7 @@
 package com.example.helloword;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.widget.Button;
 
 import com.example.helloword.gridview.GridViewActivity;
 import com.example.helloword.listview.ListViewActivity;
+import com.example.helloword.recycleview.RecyclerViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnImageView;
     private Button mBtnListView;
     private Button mBtnGridView;
+    private Button mBtnRv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnImageView = (Button) findViewById(R.id.btn_imageview);
         mBtnListView = (Button) findViewById(R.id.btn_listview);
         mBtnGridView = (Button) findViewById(R.id.btn_gridview);
+        mBtnRv = (Button) findViewById(R.id.btn_recycleview);
         setListeners();
     }
 
@@ -46,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
         mBtnImageView.setOnClickListener(onClick);
         mBtnListView.setOnClickListener(onClick);
         mBtnGridView.setOnClickListener(onClick);
+        mBtnRv.setOnClickListener(onClick);
+
     }
 
 
@@ -86,6 +92,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btn_gridview:
                     //                跳转到GridView界面
                     intent = new Intent(MainActivity.this, GridViewActivity.class);
+                    break;
+                case R.id.btn_recycleview:
+                    //                跳转到RecycleView界面
+                    intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
                     break;
             }
             startActivity(intent);

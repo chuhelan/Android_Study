@@ -18,7 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloWord"
         android:usesCleartextTraffic="true">
-        <activity android:name=".recycleview.LinearRecyclerViewActivity"></activity>
+        <activity android:name=".recycleview.LinearRecyclerViewActivity"/>
         <activity android:name=".recycleview.RecyclerViewActivity" />
         <activity android:name=".ImageViewActivity" />
         <activity android:name=".CheckBoxActivity" />
