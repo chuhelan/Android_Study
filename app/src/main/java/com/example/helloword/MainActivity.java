@@ -1,7 +1,6 @@
 package com.example.helloword;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -23,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnListView;
     private Button mBtnGridView;
     private Button mBtnRv;
+    private Button mBtnWebView;
+    private Button mBtnToast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
         mBtnListView = (Button) findViewById(R.id.btn_listview);
         mBtnGridView = (Button) findViewById(R.id.btn_gridview);
         mBtnRv = (Button) findViewById(R.id.btn_recycleview);
+        mBtnWebView = (Button) findViewById(R.id.btn_webview);
+        mBtnToast = (Button) findViewById(R.id.btn_toast);
         setListeners();
     }
 
@@ -51,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
         mBtnListView.setOnClickListener(onClick);
         mBtnGridView.setOnClickListener(onClick);
         mBtnRv.setOnClickListener(onClick);
+        mBtnWebView.setOnClickListener(onClick);
+        mBtnToast.setOnClickListener(onClick);
 
     }
 
@@ -96,6 +101,14 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btn_recycleview:
                     //                跳转到RecycleView界面
                     intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
+                    break;
+                case R.id.btn_webview:
+                    //                跳转到WebView界面
+                    intent = new Intent(MainActivity.this, WebViewActivity.class);
+                    break;
+                case R.id.btn_toast:
+                    //                跳转到ToastView界面
+                    intent = new Intent(MainActivity.this, ToastActivity.class);
                     break;
             }
             startActivity(intent);

@@ -18,7 +18,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloWord"
         android:usesCleartextTraffic="true">
-        <activity android:name=".recycleview.LinearRecyclerViewActivity"/>
+        <activity android:name=".ToastActivity"/>
+        <activity android:name=".WebViewActivity"/>
+        <activity android:name=".recycleview.PuRecyclerViewActivity"/>
+        <activity android:name=".recycleview.GridRecyclerViewActivity" />
+        <activity android:name=".recycleview.HorRecycleViewActivity" />
+        <activity android:name=".recycleview.LinearRecyclerViewActivity" />
         <activity android:name=".recycleview.RecyclerViewActivity" />
         <activity android:name=".ImageViewActivity" />
         <activity android:name=".CheckBoxActivity" />
