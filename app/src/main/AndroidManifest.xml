@@ -25,6 +25,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".CustomDialogActivity"/>
+        <activity android:name=".ProgressActivity" />
         <activity android:name=".DialogActivity" />
         <activity android:name=".ToastActivity" />
         <activity android:name=".WebViewActivity" />
@@ -41,7 +43,7 @@
         <activity android:name=".TextViewActivity" />
         <activity android:name=".listview.ListViewActivity" />
         <activity android:name=".gridview.GridViewActivity" />
-        <activity android:name=".UIActivity"/>
+        <activity android:name=".UIActivity" />
     </application>
 
 </manifest>
