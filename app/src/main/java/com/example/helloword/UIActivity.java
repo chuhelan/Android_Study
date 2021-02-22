@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.helloword.gridview.GridViewActivity;
+import com.example.helloword.jump.AActivity;
 import com.example.helloword.listview.ListViewActivity;
 import com.example.helloword.recycleview.RecyclerViewActivity;
 
@@ -27,6 +28,9 @@ public class UIActivity extends AppCompatActivity {
     private Button mBtnDialog;
     private Button mBtnProgress;
     private Button mBtnCustomDialog;
+    private Button mBtnPopupWindow;
+    private Button mBtnLifeCycle;
+    private Button mBtnJump;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +50,9 @@ public class UIActivity extends AppCompatActivity {
         mBtnDialog = (Button) findViewById(R.id.btn_dialog);
         mBtnProgress = (Button) findViewById(R.id.btn_progress);
         mBtnCustomDialog = (Button) findViewById(R.id.btn_customdialog);
+        mBtnPopupWindow = (Button) findViewById(R.id.btn_popupwindow);
+        mBtnLifeCycle = findViewById(R.id.btn_lifecycle);
+        mBtnJump = findViewById(R.id.btn_jump);
         setListeners();
     }
 
@@ -65,6 +72,9 @@ public class UIActivity extends AppCompatActivity {
         mBtnDialog.setOnClickListener(onClick);
         mBtnProgress.setOnClickListener(onClick);
         mBtnCustomDialog.setOnClickListener(onClick);
+        mBtnPopupWindow.setOnClickListener(onClick);
+        mBtnLifeCycle.setOnClickListener(onClick);
+        mBtnJump.setOnClickListener(onClick);
     }
 
 
@@ -129,6 +139,18 @@ public class UIActivity extends AppCompatActivity {
                 case R.id.btn_customdialog:
                     //                跳转到CustomDialog界面
                     intent = new Intent(UIActivity.this, CustomDialogActivity.class);
+                    break;
+                case R.id.btn_popupwindow:
+                    //                跳转到popupwindow
+                    intent = new Intent(UIActivity.this,PopupWindowActivity.class);
+                    break;
+                case R.id.btn_lifecycle:
+                    //                跳转到LifeCycle
+                    intent = new Intent(UIActivity.this,LifeCycleActivity.class);
+                    break;
+                case R.id.btn_jump:
+                    //                跳转jump
+                    intent = new Intent(UIActivity.this, AActivity.class);
                     break;
             }
             startActivity(intent);

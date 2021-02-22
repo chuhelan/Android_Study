@@ -18,14 +18,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloWord"
         android:usesCleartextTraffic="true">
-        <activity android:name=".MainActivity">
+        <activity android:name=".PopupWindowActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="首页"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CustomDialogActivity"/>
+        <activity android:name=".CustomDialogActivity" />
         <activity android:name=".ProgressActivity" />
         <activity android:name=".DialogActivity" />
         <activity android:name=".ToastActivity" />
@@ -43,7 +47,23 @@
         <activity android:name=".TextViewActivity" />
         <activity android:name=".listview.ListViewActivity" />
         <activity android:name=".gridview.GridViewActivity" />
-        <activity android:name=".UIActivity" />
+        <activity
+            android:name=".UIActivity"
+            android:label="UI控件" />
+        <activity android:name=".LifeCycleActivity" />
+        <activity
+            android:name=".jump.AActivity"
+            android:label="A" />
+        <activity
+            android:name=".jump.BActivity"
+            android:label="B">
+            <intent-filter>
+                <action android:name="com.exmple.test.BActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>
