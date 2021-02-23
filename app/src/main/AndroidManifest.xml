@@ -18,6 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloWord"
         android:usesCleartextTraffic="true">
+        <activity android:name=".fragment.ContainerActivity"></activity>
         <activity android:name=".PopupWindowActivity" />
         <activity
             android:name=".MainActivity"
@@ -63,7 +64,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
