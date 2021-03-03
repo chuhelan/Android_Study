@@ -34,4 +34,32 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+//    class OnClick implements View.OnClickListener{
+//
+//        @Override
+//        public void onClick(View v) {
+//            Intent intent = null;
+//            switch(v.getId()){
+//                case R.id.btn_ui:
+//                    intent = new Intent(MainActivity.this, UIActivity.class);
+//                    break;
+//            }
+//            startActivity(intent);
+//        }
+//    }
+//
+//    class OnClick implements View.OnClickListener{
+//
+//        @Override
+//        public void onClick(View v) {
+//            Intent intent = null;
+//            switch(v.getId()){
+//                case R.id.btn_ui:
+//                    intent = new Intent(MainActivity.this, UIActivity.class);
+//                    break;
+//            }
+//            startActivity(intent);
+//        }
+//    }
+
 }
